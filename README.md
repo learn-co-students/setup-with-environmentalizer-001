@@ -5,7 +5,7 @@ languages: ruby, bash
 
 #Environment Setup
 
-The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer)
+The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer). While getting started this is how we will set up our development environment.
 
 ## Getting Started
 The first thing you will need to do is install [Xcode](https://developer.apple.com/xcode/) and the command line tools (now a part of Xcode!). Once you've done that read ["What you need before you begin"](https://github.com/flatiron-school/environmentalizer#what-you-need-before-you-begin) and make sure you have the information you will need on hand. Now that you are ready to go let's look at what will happen.
@@ -15,18 +15,19 @@ The first thing you will need to do is install [Xcode](https://developer.apple.c
 Running the environmentalizer will make changes to several areas of your system to prepare it for all the development you are about to do. Below you will find the aspects of your computer that will be changed and what those changes will do!
 
 ###Changes in:
-+ File Directory
-+ .bash_profile
-+ Homebrew
-+ GIT
-+ SQLITE3
-+ RVM
-+ The Learn Gem
-+ Sublime Text
-+ Sensible
-+ Symlinks
-+ SSH Key
++ [File Directory](#File-Directory)
++ [.bash_profile](#)
++ [Homebrew](#)
++ [GIT](#)
++ [SQLITE3](#)
++ [RVM](#)
++ [The Learn Gem](#)
++ [Sublime Text](#)
++ [Sensible](#)
++ [Symlinks](#)
++ [SSH Key](#)
 
+<a name="File Directory"/>
 ####File Directory
 The changes here are simple, the environmentalizer adds a "Development" folder to the root of your home directory. This gives you a place to organize your code.
 Here are a few tips for setting up your directories:
@@ -57,7 +58,7 @@ Just remember, to activate a change in the dotfile, you must **reload your shell
 .. [SQLITE3](http://en.wikipedia.org/wiki/SQLite) is a relational database system. It uses standard SQL Query language and is a great place to start experimenting with databases
 
 ####RVM
-...[RVM](https://rvm.io/) is short for Ruby Version manager and after it is installed you can use it to keep track of and change between the various versions of Ruby installed on your computer with commands like `rvm list` and `rvm use 2.2.1`. RVM can also do a lot more so feel free to explore!
+[RVM](https://rvm.io/) is short for Ruby Version manager and after it is installed you can use it to keep track of and change between the various versions of Ruby installed on your computer with commands like `rvm list` and `rvm use 2.2.1`. RVM can also do a lot more so feel free to explore!
 
 ####The Learn Gem
 This will install the Flatiron Learn Gem and it's dependencies, which you will use to test your labs and make sure you have done everythign correctly. Specifically 
