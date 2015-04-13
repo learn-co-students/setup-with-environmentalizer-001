@@ -25,9 +25,9 @@ Running the environmentalizer will make changes to several areas of your system 
 + [Sublime Text](#)
 + [Sensible](#)
 + [Symlinks](#)
-+ [SSH Key](#)
++ [SSH Key](#SSH-Key)
 
-<a name="File Directory"/>
+<a name="File-Directory"/>
 ####File Directory
 The changes here are simple, the environmentalizer adds a "Development" folder to the root of your home directory. This gives you a place to organize your code.
 Here are a few tips for setting up your directories:
@@ -77,6 +77,7 @@ Remember to look through all of these files to see exactly what settings they ha
 ####Symlinks
 While homebrew will create some symlinks for you the environmentalizer will set up others. Most importantly it will set up Sublime Text 3 as your default editor and set up a command line keyword "subl" to open 
 
+<a name="SSH-Key"/>
 ####SSH Key
 [SSH](http://en.wikipedia.org/wiki/Secure_Shell) stands for Secure Shell. The environmentalizer will combine the key that you got from GitHub with a SSH key that is generated on your computer and put them into a file. These keys will let you communicate remotely with your github account without having to enter your password ever time. 
 
