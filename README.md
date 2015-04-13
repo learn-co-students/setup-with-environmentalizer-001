@@ -5,14 +5,14 @@ languages: ruby, bash
 
 #Environment Setup
 
-The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer). While getting started this is how we will set up our development environment.
+The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer). While getting started, this is how we will set up our development environment.
 
 ## Getting Started
-The first thing you will need to do is install [Xcode](https://developer.apple.com/xcode/) and the command line tools (now a part of Xcode!). Once you've done that read ["What you need before you begin"](https://github.com/flatiron-school/environmentalizer#what-you-need-before-you-begin) and make sure you have the information you will need on hand. Now that you have done all that lets actually learn what the environmentalizer will do.
+The first thing you will need to do is install [Xcode](https://developer.apple.com/xcode/) and the command line tools (now a part of Xcode!). Once you've done that, read ["What you need before you begin"](https://github.com/flatiron-school/environmentalizer#what-you-need-before-you-begin) and make sure you have the information you will need on hand. Now that you are ready, lets actually learn what the environmentalizer will do.
 
 
 ##What Will the Environmentalizer do?
-Running the environmentalizer will make changes to several areas of your system to prepare it for all the development you are about to do. Below you will find the aspects of your computer that will be changed and what those changes will do!
+Running the environmentalizer will make changes to your system to prepare it for all the development you are about to do. Below you will find the aspects of your computer that will be changed and what those changes will do!
 
 ###Changes in:
 + [File Directory](#File-Directory)
@@ -28,7 +28,6 @@ Running the environmentalizer will make changes to several areas of your system 
 + [SSH Key](#SSH-Key)
 + [Google Chrome](#Google-Chrome)
 
-<a name="File-Directory"/>
 ####File Directory
 The changes here are simple, the environmentalizer adds a "Development" folder to the root of your home directory. This gives you a place to organize your code.
 Here are a few tips for setting up your directories:
@@ -89,11 +88,9 @@ Remember to look through all of these files to see exactly what settings they ha
 ####Symlinks
 Symlink stands for "Symbolic Link" Homebrew will create some symlinks for you, the environmentalizer will create others, and you can later create more. A symlink is like a shortcut in command line. It will allow you to type something like `desktop` in bash to `cd` from any file directory to the desktop. It can also be used as a command, for example you will often find yourself typing `subl .` to open up the current file directory in Sublime Text. 
 
-<a name="SSH-Key"/>
 ####SSH Key
 SSH keys serve as a means to identify yourself to and SSH server using a public key and a response authentication. This means that you will be able to identify yourself to a server without entering a password. In this case they public key you got from GitHub before you started and the key the environmentalizer sets up will work to let you access your GitHub account without entering a password each time. 
 
-<a name="Google-Chrome"/>
 ####Google Chrome
 Google Chrome is a Web Browser, we suggest you use it when developing in rails.
 
