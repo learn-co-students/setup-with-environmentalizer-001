@@ -8,7 +8,7 @@ languages: ruby, bash
 The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer). While getting started this is how we will set up our development environment.
 
 ## Getting Started
-The first thing you will need to do is install [Xcode](https://developer.apple.com/xcode/) and the command line tools (now a part of Xcode!). Once you've done that read ["What you need before you begin"](https://github.com/flatiron-school/environmentalizer#what-you-need-before-you-begin) and make sure you have the information you will need on hand. Now that you are ready to go let's look at what will happen.
+The first thing you will need to do is install [Xcode](https://developer.apple.com/xcode/) and the command line tools (now a part of Xcode!). Once you've done that read ["What you need before you begin"](https://github.com/flatiron-school/environmentalizer#what-you-need-before-you-begin) and make sure you have the information you will need on hand. Now that you have done all that lets actually learn what the environmentalizer will do.
 
 
 ##What Will the Environmentalizer do?
@@ -39,7 +39,7 @@ Here are a few tips for setting up your directories:
 ..+Be able to get in/out of different code projects easily.
 
 <a name=".bash-profile"/>
-####Bash Profile
+####.bash_profile
 Your bash_profile is a script that runs every time you open or login to your shell. It can configure environment variables, like your `PS1`, which stores your prompt, or `EDITOR`, which is the command other programs will use when they need to launch your default editor.
 
 You can also create aliases for common commands so that they are shorter to use.
@@ -58,8 +58,11 @@ Just remember, to activate a change in the dotfile, you must **reload your shell
 
 <a name="GIT"/>
 ####GIT
-[GIT](http://en.wikipedia.org/wiki/Git_%28software%29) is the most widely used revision control system in the world. Read about it, YOU WILL USE IT ALOT!
-.. [SQLITE3](http://en.wikipedia.org/wiki/SQLite) is a relational database system. It uses standard SQL Query language and is a great place to start experimenting with databases
+[GIT](http://en.wikipedia.org/wiki/Git_%28software%29) is the most widely used revision control system in the world. Read about it, YOU WILL USE IT ALOT! In conjugation with GitHub you will be able to use it to keep up to date versions of all your projects, standardize code bases with project groups, roll back changes you decide you don't like, and so much more.
+
+<a name="SQLITE3"/>
+####SQLITE3
+[SQLITE3](http://en.wikipedia.org/wiki/SQLite) is a relational database system. It uses standard SQL Query language and is a great place to start experimenting with databases. While will use other databases later on SQLITE3 is a great place to start. 
 
 <a name="RVM"/>
 ####RVM
@@ -71,24 +74,24 @@ This will install the Flatiron Learn Gem and it's dependencies, which you will u
 
 <a name="Sublime-Text"/>
 ####Sublime Text
-[Sublime Text]() is the text editor we will use at the flatiron school. It is where you will be spending the bulk of your time and it is where you will write all your code. The environmentalizer installs Sublime Text with a package manager so you can install cool themes and useful add-ons like the [Brogrammer Theme](https://github.com/kenwheeler/brogrammer-theme) or [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter).
+[Sublime Text](http://www.sublimetext.com/) is the text editor we use at the flatiron school. The environmentalizer installs Sublime Text with a package manager so you can install cool themes and useful add-ons like the [Brogrammer Theme](https://github.com/kenwheeler/brogrammer-theme) or [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter). Make sure you take the time to set it up how you like because you will be spending a lot of time in it!
 
 <a name="Sensible"/>
 ####Sensible
-This will be `.gitconfig`, `.gitignore`, `.gemrc`, and `.irbrc` files but what do they do?
+Like the `.bash_profile` these are scripts and configuration files that work in different areas. You should read through them all to see the specifics of what they are doing. Each has a specific purpos and works for different things. 
 + `.gitconfig` will contain the settings that you will take advantage of when employing git in your command line. 
-+ `.gitignore` is a collection of files that you want git to ignore. There are some files that you don't want git to track including, but not limited to, `.DSstore` and `.env`.
++ `.gitignore` is a collection of files that you want git to ignore. Some files that you don't want git to track including, but not limited to, `.DSstore` and `.env`.
 + `.gemrc` Another settings file, this time for your your interaction with ruby gems.
-+ `.irbrc` IRB stands for "Interactive Ruby Shell" by typing the command `irb` in your command line you can open up a ruby shell and write ruby code directly in your terminal. A `.irbr` file will contain any custom settings for your use of IRB.
++ `.irbrc` IRB stands for "Interactive Ruby Shell" by typing the command `irb` in your command line you can open up a ruby shell and write ruby code directly in your terminal. The `.irbc` file will contain any custom settings for your use of IRB.
 Remember to look through all of these files to see exactly what settings they have installed on your computer.
 
 <a name="Symlinks"/>
 ####Symlinks
-While homebrew will create some symlinks for you the environmentalizer will set up others. Most importantly it will set up Sublime Text 3 as your default editor and set up a command line keyword "subl" to open 
+Symlink stands for "Symbolic Link" Homebrew will create some symlinks for you, the environmentalizer will create others, and you can later create more. A symlink is like a shortcut in command line. It will allow you to type something like `desktop` in bash to `cd` from any file directory to the desktop. It can also be used as a command, for example you will often find yourself typing `subl .` to open up the current file directory in Sublime Text. 
 
 <a name="SSH-Key"/>
 ####SSH Key
-[SSH](http://en.wikipedia.org/wiki/Secure_Shell) stands for Secure Shell. The environmentalizer will combine the key that you got from GitHub with a SSH key that is generated on your computer and put them into a file. These keys will let you communicate remotely with your github account without having to enter your password ever time. 
+SSH keys serve as a means to identify yourself to and SSH server using a public key and a response authentication. This means that you will be able to identify yourself to a server without entering a password. In this case they public key you got from GitHub before you started and the key the environmentalizer sets up will work to let you access your GitHub account without entering a password each time. 
 
 <a name="Google-Chrome"/>
 ####Google Chrome
@@ -101,6 +104,3 @@ To get everything started just copy the following code into your terminal (with 
 `curl -L "https://raw.githubusercontent.com/flatiron-school/environmentalizer/master/runner.sh" | bash`
 
 Sit back, remember to enter your password when prompted and watch out for errors!
-
-
-
