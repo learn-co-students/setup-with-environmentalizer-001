@@ -29,6 +29,12 @@ Running the environmentalizer will make changes to several areas of your system 
 
 ####File Directory
 The changes here are simple, the environmentalizer adds a "Development" folder to the root of your home directory. This gives you a place to organize your code.
+Here are a few tips for setting up your directories:
+..+Except for directories in ~, always use lowercase directory names.
+..+Prefer - to _ or to separate words in directory names.
+..+Keep all code in one place.
+..+Have a place for resources and other things that are related to code, but aren't code.
+..+Be able to get in/out of different code projects easily.
 
 ####Bash Profile
 Your bash_profile is a script that runs every time you open or login to your shell. It can configure environment variables, like your `PS1`, which stores your prompt, or `EDITOR`, which is the command other programs will use when they need to launch your default editor.
