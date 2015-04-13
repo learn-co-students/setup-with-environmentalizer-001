@@ -16,16 +16,17 @@ Running the environmentalizer will make changes to several areas of your system 
 
 ###Changes in:
 + [File Directory](#File-Directory)
-+ [.bash_profile](#)
-+ [Homebrew](#)
-+ [GIT](#)
-+ [SQLITE3](#)
-+ [RVM](#)
-+ [The Learn Gem](#)
-+ [Sublime Text](#)
-+ [Sensible](#)
-+ [Symlinks](#)
++ [.bash_profile](#.bash-profile)
++ [Homebrew](#Homebrew)
++ [GIT](#GIT)
++ [SQLITE3](#SQLITE3)
++ [RVM](#RVM)
++ [The Learn Gem](#The-Learn-Gem)
++ [Sublime Text](#Sublime-Text)
++ [Sensible](#Sensible)
++ [Symlinks](#Symlinks)
 + [SSH Key](#SSH-Key)
++ [Google Chrome](#Google-Chrome)
 
 <a name="File-Directory"/>
 ####File Directory
@@ -37,6 +38,7 @@ Here are a few tips for setting up your directories:
 ..+Have a place for resources and other things that are related to code, but aren't code.
 ..+Be able to get in/out of different code projects easily.
 
+<a name=".bash-profile"/>
 ####Bash Profile
 Your bash_profile is a script that runs every time you open or login to your shell. It can configure environment variables, like your `PS1`, which stores your prompt, or `EDITOR`, which is the command other programs will use when they need to launch your default editor.
 
@@ -50,22 +52,28 @@ Within that Bash Profile are comments that explain each part. **Make sure to rea
 
 Just remember, to activate a change in the dotfile, you must **reload your shell**. You can do that via opening a new tab or typing `source .bash_profile` (from the `~` directory).
 
+<a name="Homebrew"/>
 ####Homebrew
 [Homebrew](http://brew.sh/) is a package manager for OSX. Not only will it help you install packages via commands like `brew install wget` but it will also organize the packages you install and add the appropriate locations to your path. As if that weren't enough Homebrew can also be used to ensure your system is healthy. Commands like `brew doctor` will help you gague the health of your system and often provide suggestions for how to fix problems. 
 
+<a name="GIT"/>
 ####GIT
 [GIT](http://en.wikipedia.org/wiki/Git_%28software%29) is the most widely used revision control system in the world. Read about it, YOU WILL USE IT ALOT!
 .. [SQLITE3](http://en.wikipedia.org/wiki/SQLite) is a relational database system. It uses standard SQL Query language and is a great place to start experimenting with databases
 
+<a name="RVM"/>
 ####RVM
 [RVM](https://rvm.io/) is short for Ruby Version manager and after it is installed you can use it to keep track of and change between the various versions of Ruby installed on your computer with commands like `rvm list` and `rvm use 2.2.1`. RVM can also do a lot more so feel free to explore!
 
+<a name="The-Learn-Gem"/>
 ####The Learn Gem
 This will install the Flatiron Learn Gem and it's dependencies, which you will use to test your labs and make sure you have done everythign correctly. Specifically 
 
+<a name="Sublime-Text"/>
 ####Sublime Text
 [Sublime Text]() is the text editor we will use at the flatiron school. It is where you will be spending the bulk of your time and it is where you will write all your code. The environmentalizer installs Sublime Text with a package manager so you can install cool themes and useful add-ons like the [Brogrammer Theme](https://github.com/kenwheeler/brogrammer-theme) or [Bracket Highlighter](https://github.com/facelessuser/BracketHighlighter).
 
+<a name="Sensible"/>
 ####Sensible
 This will be `.gitconfig`, `.gitignore`, `.gemrc`, and `.irbrc` files but what do they do?
 + `.gitconfig` will contain the settings that you will take advantage of when employing git in your command line. 
@@ -74,6 +82,7 @@ This will be `.gitconfig`, `.gitignore`, `.gemrc`, and `.irbrc` files but what d
 + `.irbrc` IRB stands for "Interactive Ruby Shell" by typing the command `irb` in your command line you can open up a ruby shell and write ruby code directly in your terminal. A `.irbr` file will contain any custom settings for your use of IRB.
 Remember to look through all of these files to see exactly what settings they have installed on your computer.
 
+<a name="Symlinks"/>
 ####Symlinks
 While homebrew will create some symlinks for you the environmentalizer will set up others. Most importantly it will set up Sublime Text 3 as your default editor and set up a command line keyword "subl" to open 
 
@@ -81,6 +90,7 @@ While homebrew will create some symlinks for you the environmentalizer will set 
 ####SSH Key
 [SSH](http://en.wikipedia.org/wiki/Secure_Shell) stands for Secure Shell. The environmentalizer will combine the key that you got from GitHub with a SSH key that is generated on your computer and put them into a file. These keys will let you communicate remotely with your github account without having to enter your password ever time. 
 
+<a name="Google-Chrome"/>
 ####Google Chrome
 Google Chrome is a Web Browser, we suggest you use it when developing in rails.
 
