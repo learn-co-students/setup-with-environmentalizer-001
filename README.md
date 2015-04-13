@@ -15,7 +15,7 @@ The first thing you will need to do is install [Xcode](https://developer.apple.c
 Running the environmentalizer will make changes to your system to prepare it for all the development you are about to do. Below you will find the aspects of your computer that will be changed and what those changes will do!
 
 ###Changes in:
-+ [File Directory](#File-Directory)
++ [File Directory](#file-directory)
 + [.bash_profile](#.bash-profile)
 + [Homebrew](#Homebrew)
 + [GIT](#GIT)
@@ -25,8 +25,8 @@ Running the environmentalizer will make changes to your system to prepare it for
 + [Sublime Text](#Sublime-Text)
 + [Sensible](#Sensible)
 + [Symlinks](#Symlinks)
-+ [SSH Key](#SSH-Key)
-+ [Google Chrome](#Google-Chrome)
++ [SSH Key](#ssh-key)
++ [Google Chrome](#google-chrome)
 
 ####File Directory
 The changes here are simple, the environmentalizer adds a "Development" folder to the root of your home directory. This gives you a place to organize your code.
