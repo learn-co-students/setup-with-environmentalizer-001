@@ -1,8 +1,3 @@
----
-tags: setup, environment, bash
-languages: ruby, bash
----
-
 #Environment Setup
 
 The wizards at Flatiron Labs made a script to set up your machine for development. Checkout the main page [here](https://github.com/flatiron-school/environmentalizer). While getting started, this is how we will set up our development environment.
